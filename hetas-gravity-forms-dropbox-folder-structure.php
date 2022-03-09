@@ -19,30 +19,54 @@ if ( ! defined( 'WPINC' ) ) {
 
 add_filter( 'gform_dropbox_folder_path_8', 'form_8_change_path', 10, 5 );
 function form_8_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+    $datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+	return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
+}
+
+add_filter( 'gform_dropbox_folder_path_13', 'form_13_change_path', 10, 5 );
+function form_13_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+	return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
 }
 
 add_filter( 'gform_dropbox_folder_path_15', 'form_15_change_path', 10, 5 );
 function form_15_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-	return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+	return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
 }
 
 add_filter( 'gform_dropbox_folder_path_27', 'form_27_change_path', 10, 5 );
 function form_27_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
 }
 
 add_filter( 'gform_dropbox_folder_path_43', 'form_43_change_path', 10, 5 );
 function form_43_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
 }
 
 add_filter( 'gform_dropbox_folder_path_44', 'form_44_change_path', 10, 5 );
 function form_44_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
 }
 
 add_filter( 'gform_dropbox_folder_path_45', 'form_45_change_path', 10, 5 );
 function form_45_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
-    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. rgar( $entry, 'date_created' );
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
+}
+
+add_filter( 'gform_dropbox_folder_path_54', 'form_54_change_path', 10, 5 );
+function form_54_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/' . rgar( $entry, '1' ) .' - '. $datetime;
+}
+
+add_filter( 'gform_dropbox_folder_path_55', 'form_55_change_path', 10, 5 );
+function form_55_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
+	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
+    return $folder_path . '/HABMS-Additional-Operatives - '. $datetime;
 }
