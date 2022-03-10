@@ -68,5 +68,5 @@ function form_54_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
 add_filter( 'gform_dropbox_folder_path_55', 'form_55_change_path', 10, 5 );
 function form_55_change_path( $folder_path, $form, $field_id, $entry, $feed ) {
 	$datetime = str_replace(':','',rgar( $entry, 'date_created' ));
-    return $folder_path . '/HABMS-Additional-Operatives - '. $datetime;
+    return $folder_path . '/' . rgar( $entry, '2' ) .' - '. $datetime;
 }
